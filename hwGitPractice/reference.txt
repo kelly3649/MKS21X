@@ -1,0 +1,25 @@
+great! it finally works!
+
+List of git Commands:
+
+Clone: all machines are in sync after you synchronize
+
+$git init: initializes and now, you can start committing code!
+
+$git add filename: adds file to staging area
+
+$git status: checks status of changes
+
+$git diff filename: after editing files, since files are tracked, we can check the difference between the working directory and the staging area.
+
+$git commit: last step in Git workflow, permanently stores changes from staging area to the repository
+
+$git commit -m "followed by a message": makes a comment to tell you what the commits changed
+
+$git log: commits are stored chronologically in repository, so this allows the commit messages to be viewed and when you committed them.
+
+$git show HEAD: output will display everything the git log command displays for the HEAD commit(the most recent commit) and all the file changes that were committed.
+
+$git checkout HEAD filename: will restore file in working directory to what it was when you made the last commit.
+
+$git reset HEAD filename: unstages that file from the staging area/
