@@ -1,5 +1,5 @@
 great! it finally works!
-
+I'm changing something that ill change back later
 List of git Commands:
 
 Clone: all machines are in sync after you synchronize
