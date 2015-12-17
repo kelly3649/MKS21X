@@ -42,21 +42,6 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	pane.add(bFtoC);
 	pane.add(j);
     }
-    public void actionPerformed(ActionEvent e){
-	String event = e.getActionCommand();
-	if(event.equals("CeltoFah")){
-	    String s = t.getText();
-	    double val = Integer.parseInt(s);
-	    String retVal = String.valueOf(CtoF(val));
-	    j.setText(retVal);
-	}
-	if(event.equals("CeltoFah")){
-	    String s = t.getText();
-	    double val = Integer.parseInt(s);
-	    String retVal = String.valueOf(FtoC(val));
-	    j.setText(retVal);
-	}
-    }
-    
+j = new JLabel("Welcome to Kelly's TempConverter");
 }
 
