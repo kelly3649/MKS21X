@@ -17,13 +17,9 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	pane = this.getContentPane();
 	pane.setLayout(new BoxLayout(pane, BoxLayout.Y_AXIS));
 
-	JButton b = new JButton("ByteMe");
-	b.addActionListener(this);
-	b.setActionCommand("Byte");
-	JButton b2 = new JButton("No...");
-	b2.addActionListener(this);
-	b2.setActionCommand("NotByte");
-
+	JButton bCtoF = new JButton("CtoF");
+	bCtoF.addActionListener(this);
+	bCtoF.setActionCommand("CeltoFah");
 
 	t = new JTextField(10);
 
@@ -31,17 +27,22 @@ public class TempConversionWindow extends JFrame implements ActionListener{
 	j = new JLabel("Meaning of life is... ");
 	pane.add(c);
 	pane.add(t);
-	pane.add(b);
-	pane.add(b2);
+       	pane.add(bCtoF);
 	pane.add(j);
     }
-
+    public static double CtoF(double t){
+	return t * 9 / 5 + 32;
+    }
+    public static double FtoC(double t){
+	return (t-32) * 5 / 9;
+    }
     public void actionPerformed(ActionEvent e){
 	String event = e.getActionCommand();
-	if(event.equals("Byte")){
+	if(event.equals("CeltoFah")){
 	    String s = t.getText();
-	    s += "-0101000";
-	    j.setText(s);
+	    double val = Integer.parseInt(s);
+	    String retVal = String.valueOf(CtoF(val));
+	    j.setText(retVal);
 	}
 	if(event.equals("NotByte")){
 	    j.setText("Fish");
