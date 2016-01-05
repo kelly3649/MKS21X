@@ -21,5 +21,22 @@ public class Sorts{
 	  
 	}
     }
+    
+    public static void selectionSort(int[] data){
+	for(int i = 0;i<data.length;i++){//places into right spot
+	    	int min = data[i];
+		int minIndex = i;
+	    for(int index = i;index<data.length;index++){//set min
+		if(min>data[index]){
+		    min = data[index];
+		    minIndex = index;
+		}
+	    }
+	    int copy = data[i];
+	    data[minIndex] = copy;
+	    data[i] = min;
+	}
+    }
+	
 }
 

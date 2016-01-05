@@ -12,5 +12,7 @@ public class Driver{
 	Sorts.printArray(array);
 	Sorts.insertionSort(array);
 	Sorts.printArray(array);
+	Sorts.selectionSort(array); //supposed to be the same result as above
+	Sorts.printArray(array);
     }
 }
