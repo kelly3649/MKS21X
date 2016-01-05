@@ -1,4 +1,5 @@
 public class Sorts{
+
     public static void printArray(int[] data){
 	String retString = "[";
 	int i = 0;
@@ -8,7 +9,7 @@ public class Sorts{
 	}
         retString += data[data.length-1] + "]";
 	System.out.println(retString);
-    }
+	}
     public static void insertionSort(int[] data){
 	for(int nextI = 1;nextI<data.length;nextI++){
 	    int nowI = nextI;
@@ -20,6 +21,7 @@ public class Sorts{
 	    }
 	  
 	}
+
     }
     
     public static void selectionSort(int[] data){
@@ -37,6 +39,16 @@ public class Sorts{
 	    data[i] = min;
 	}
     }
-	
+    public static void bubbleSort(int[] data){
+	for(int i = 0;i<data.length;i++){
+	    for(int index = 0;index<data.length-i-1;index++){
+		if (data[index] > data[index+1]){
+		    int copy = data[index];
+		    data[index+1] = copy;
+		    data[index] = data[index+1];
+		}
+	    }
+	}
+    }
 }
 

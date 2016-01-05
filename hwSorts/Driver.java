@@ -7,13 +7,15 @@ public class Driver{
 	Sorts.printArray(arry);
 	Sorts.selectionSort(arry);
 	Sorts.printArray(arry);
-	Sorts.insertionSort(ary);
+      	Sorts.insertionSort(ary);
 	Sorts.printArray(ary);
 	Sorts.selectionSort(ary);
+	Sorts.printArray(ary);
+	Sorts.bubbleSort(ary);
 	Sorts.printArray(ary);
 	Sorts.insertionSort(array);
 	Sorts.printArray(array);
 	Sorts.selectionSort(array); //supposed to be the same result as above
 	Sorts.printArray(array);
-    }
+	    }
 }
