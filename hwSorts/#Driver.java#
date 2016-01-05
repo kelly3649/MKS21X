@@ -1,0 +1,13 @@
+
+	Sorts.insertionSort(arry);
+	Sorts.printArray(arry);
+	Sorts.printArray(ary);
+	Sorts.insertionSort(ary);
+	Sorts.printArray(ary);
+	Sorts.printArray(array);
+	Sorts.insertionSort(array);
+	Sorts.printArray(array);
+	Sorts.selectionSort(array); //supposed to be the same result as above
+	Sorts.printArray(array);
+    }
+}
