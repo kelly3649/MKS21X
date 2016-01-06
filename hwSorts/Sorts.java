@@ -44,11 +44,19 @@ public class Sorts{
 	    for(int index = 0;index<data.length-i-1;index++){
 		if (data[index] > data[index+1]){
 		    int copy = data[index];
-		    data[index+1] = copy;
 		    data[index] = data[index+1];
-		}
-	    }
+		    data[index+1] = copy;
+		}//printArray(data);
+	    }printArray(data);
 	}
+    }
+    public static void main(String[]args){
+	int[] ary = {0,1,-12,4,5,2,-1};
+	bubbleSort(ary);
+	printArray(ary);
+	int[] arey = {-1,3,-2,-2,-2};
+	bubbleSort(arey);
+	printArray(arey);
     }
 }
 
